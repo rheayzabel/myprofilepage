@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUDA, Rhea Yzabel E. — Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..700&family=Redaction+35:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1>Get to Know Me!</h1>
+    </header>
+
+    <!-- Sticky Pill Navigation Bar -->
+    <nav class="section-nav" aria-label="Profile Sections">
+        <a href="#about-me" class="nav-btn">About Me</a>
+        <a href="#interests" class="nav-btn">Interests</a>
+        <a href="#passion-projects" class="nav-btn">Passion Projects</a>
+        <a href="#contacts" class="nav-btn">Contacts</a>
+    </nav>
+
+    <!-- Hero Profile Card -->
+    <section class="hero-card">
+        <div class="profile-ring" onclick="openLightbox(this.querySelector('img'))">
+            <div class="profile-pic">
+                <img src="myprofile.JPG" alt="Rhea Yzabel E. Guda"
+                     onerror="this.src='https://placehold.co/400x400/001F3F/87CEEB?text=Rhea'">
+            </div>
+        </div>
+        <h2>⋆𐙚˚࿔ Rhea Yzabel E. Guda 𝜗𝜚˚⋆</h2>
+        <span class="subtitle-badge">BA Multimedia Studies • UP Open University</span>
+        
+        <blockquote class="verse-quote">
+            “I can do all things through Christ who gives me strength.”
+            <span>— Philippians 4:13</span>
+        </blockquote>
+    </section>
+
+    <!-- About Me -->
+    <section id="about-me" class="card">
+        <div class="section-header">
+            <span class="section-tag">01</span>
+            <h3>About Me</h3>
+        </div>
+        <p>Again, I am <strong>Rhea Yzabel E. Guda</strong>. I am now taking my sophomore year in <strong>BA Multimedia Studies</strong> at the University of the Philippines Open University.</p>
+        <p>I am 19 years old, turning 20 years old this year. I was born in October 24, 2006.</p>
+        <p>To get to know me more, I am an introvert. I can only show an extrovert side of me if I am with my close friends or the people I am most comfortable with.</p>
+    </section>
+
+    <!-- Interests -->
+    <section id="interests" class="card">
+        <div class="section-header">
+            <span class="section-tag">02</span>
+            <h3>Interests</h3>
+        </div>
+        <ol class="interests-grid">
+            <li><span class="interest-num">01</span> blue</li>
+            <li><span class="interest-num">02</span> playing guitar</li>
+            <li><span class="interest-num">03</span> painting</li>
+            <li><span class="interest-num">04</span> wave to earth</li>
+            <li><span class="interest-num">05</span> kpop</li>
+            <li><span class="interest-num">06</span> opm</li>
+            <li><span class="interest-num">07</span> worship songs</li>
+        </ol>
+    </section>
+
+    <!-- Passion Projects Gallery -->
+    <section id="passion-projects" class="card">
+        <div class="section-header">
+            <span class="section-tag">03</span>
+            <h3>Passion Projects</h3>
+        </div>
+        <p>Ever since I've decided to take BAMS as my undergraduate degree, I have been passionate about taking photography. It has become a significant part of my life and a way for me to express myself creatively.</p>
+        
+        <div class="gallery">
+            <figure class="photo-card" onclick="openLightbox(this.querySelector('img'))">
+                <div class="photo-img-wrap">
+                    <img src="intra.JPG" alt="Intramuros"
+                         onerror="this.src='https://placehold.co/400x500/001F3F/87CEEB?text=intra.JPG'">
+                </div>
+                <figcaption class="photo-meta">
+                    <span class="photo-title">Intramuros</span>
+                    <span class="swatch-dot"></span>
+                </figcaption>
+            </figure>
+
+            <figure class="photo-card" onclick="openLightbox(this.querySelector('img'))">
+                <div class="photo-img-wrap">
+                    <img src="dilaw.JPG" alt="Dilaw"
+                         onerror="this.src='https://placehold.co/400x500/001F3F/87CEEB?text=dilaw.JPG'">
+                </div>
+                <figcaption class="photo-meta">
+                    <span class="photo-title">Dilaw</span>
+                    <span class="swatch-dot"></span>
+                </figcaption>
+            </figure>
+
+            <figure class="photo-card" onclick="openLightbox(this.querySelector('img'))">
+                <div class="photo-img-wrap">
+                    <img src="sunken.JPG" alt="Sunken Garden"
+                         onerror="this.src='https://placehold.co/400x500/001F3F/87CEEB?text=sunken.JPG'">
+                </div>
+                <figcaption class="photo-meta">
+                    <span class="photo-title">Sunken Garden</span>
+                    <span class="swatch-dot"></span>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="gallery-hint">Hover to elevate • Click any photo to view full size</div>
+    </section>
+
+    <!-- Contacts -->
+    <footer id="contacts" class="card">
+        <div class="section-header">
+            <span class="section-tag">04</span>
+            <h3>Contacts</h3>
+        </div>
+        <div class="contact-grid">
+            <a class="contact-item" href="tel:+639294511548">
+                <span class="contact-label">Cellphone #</span>
+                <span class="contact-value">+63 9294511548</span>
+            </a>
+            <a class="contact-item" href="mailto:reguda@up.edu.ph">
+                <span class="contact-label">Gmail</span>
+                <span class="contact-value">reguda@up.edu.ph</span>
+            </a>
+            <a class="contact-item" href="https://www.facebook.com/rheayzabel.guda/" target="_blank" rel="noopener noreferrer">
+                <span class="contact-label">Facebook</span>
+                <span class="contact-value">Rhea Yzabel Guda ↗</span>
+            </a>
+            <a class="contact-item" href="https://www.instagram.com/rheaberu/" target="_blank" rel="noopener noreferrer">
+                <span class="contact-label">Instagram</span>
+                <span class="contact-value">@rheaberu ↗</span>
+            </a>
+        </div>
+    </footer>
+</main>
+
+<!-- Fullscreen Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-content">
+        <img id="lightboxImg" src="" alt="">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+</div>
+
+<script>
+    function openLightbox(img) {
+        if (!img) return;
+        document.getElementById('lightboxImg').src = img.src;
+        document.getElementById('lightboxCaption').textContent = img.alt;
+        document.getElementById('lightbox').classList.add('open');
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').classList.remove('open');
+    }
+</script>
+
+</body>
+</html>
